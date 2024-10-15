@@ -1,10 +1,11 @@
-打包环境node = 16
-先webpack打包;再部署
-
-
 使用文档 Documentation
 ====
 ### 目录 Contents
+### 项目部署
+#### 环境
+打包环境node = 16
+#### 步骤
+先webpack打包;再部署
 
 
 ### 1 关于LaTeX公式编辑 Introduce
@@ -334,7 +335,7 @@ SVGCode即是一个SVG文件的全部代码，此支持HTML环境。
 小型分数<br/>Small fractions (force \textstyle) | $\tfrac{2}{4}x = 0.5x$ | \tfrac{2}{4}x = 0.5x 
 大型分数（不嵌套）<br/>Large (normal) fractions (force \displaystyle) | $\dfrac{2}{4} = 0.5 \qquad \dfrac{2}{c + \dfrac{2}{d + \dfrac{2}{4}}} = a$ | \dfrac{2}{4} = 0.5 \qquad \dfrac{2}{c + \dfrac{2}{d + \dfrac{2}{4}}} = a
 大型分数（嵌套）<br/>Large (nested) fractions | $\cfrac{2}{c + \cfrac{2}{d + \cfrac{2}{4}}} = a$ | \cfrac{2}{c + \cfrac{2}{d + \cfrac{2}{4}}} = a
-约分线的使用<br/>Cancellations in fractions | <img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/cancel3.png" alt="cancel3" style="zoom:28%;" /> | \cfrac{x}{1 + \cfrac{\cancel{y}}{\cancel{y}}} = \cfrac{x}{2}
+约分线的使用<br/>Cancellations in fractions |  \cfrac{x}{1 + \cfrac{\cancel{y}}{\cancel{y}}} = \cfrac{x}{2}
 
 **注意：** 其中`\cancel`命令需要**cancel扩展包**支持，**cancel扩展包**是一款自定义宏包，如需使用请在公式页面右上角【设置】处勾选后使用。
 
@@ -423,13 +424,13 @@ $$
 \unicode{8751}  \unicode{x222F}_C %曲面积分符号的Unicode码十进制为8751,十六进制为x222F(注意x标识符)
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/unicode2.png" alt="unicode2" style="zoom:95%;" />
+
 
 ```
 \unicode{8752}  \unicode{x2230}_C %三维曲面积分符号的Unicode码十进制为8752,十六进制为x2230
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/unicode3.png" alt="unicode3" style="zoom:85%;" />
+
 
 其他积分符号：
 
@@ -439,7 +440,7 @@ $$
 \unicode{8755} \unicode{x2233}_c
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/unicode4.png" alt="unicode4" style="zoom:75%;" />
+
 
 
 
@@ -664,7 +665,7 @@ Bbox扩展是一款自定义宏包，如需使用请在公式页面右上角【�
 ```
 \bbox[red]{x+y}
 ```
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/bbox1.png" alt="bbox1" style="zoom:15%;" />
+
 
 ###### 2.7.3.2 调整背景大小 Setting Background Size
 
@@ -672,12 +673,12 @@ Bbox扩展是一款自定义宏包，如需使用请在公式页面右上角【�
 ```
 \bbox[2pt]{x+y}  %设置透明背景，并增加2pt额外距离
 ```
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/bbox2.png" alt="bbox2" style="zoom:15%;" />
+
 
 ```
 \bbox[red,5pt]{x+y}  %设置红色背景，并增加5pt额外距离
 ```
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/bbox3.png" alt="bbox3" style="zoom:15%;" />
+
 
 ##### 2.7.4 默认支持颜色 Colors supported
 
@@ -1008,7 +1009,7 @@ mhchem是一款便捷输入化学方程式的扩展包，使用前需要在设�
 ```
 \ce{H2O}  \ce{Sb2O3}  \ce{H+}  \ce{CrO4^2-}  \ce{[AgCl2]-}  \ce{Y^99+}  \ce{Y^{99+}}
 ```
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce1.png" alt="ce1" style="zoom:85%;" />
+
 
 ###### 2.11.2.3 化学计量数
 
@@ -1018,7 +1019,7 @@ mhchem是一款便捷输入化学方程式的扩展包，使用前需要在设�
 \ce{2H2O}  \ce{0.5 H2O}  \ce{1/2H2O}  \ce{(1/2)H2O}  \ce{$n$ H2O}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce2.png" alt="ce2" style="zoom:75%;" />
+
 
 
 ###### 2.11.2.4 同位素
@@ -1027,7 +1028,7 @@ mhchem是一款便捷输入化学方程式的扩展包，使用前需要在设�
 \ce{^{227}_{90}Th+}  \ce{^227_90Th+}  \ce{^{0}_{-1}n^{-}}  \ce{^0_-1n-}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce3.png" alt="ce3" style="zoom:55%;" />
+
 
 在一个复杂的化学式中，上标属于左侧元素还是右侧元素可能并不会明显的体现出来，但为了规范输入，建议使用`{}`分隔符作为区分：
 
@@ -1035,7 +1036,7 @@ mhchem是一款便捷输入化学方程式的扩展包，使用前需要在设�
 \ce{H{}^3HO}  \ce{H^3HO}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce4.png" alt="ce4" style="zoom:25%;" />
+
 
 ###### 2.11.2.5 反应箭头
 
@@ -1045,13 +1046,13 @@ mhchem提供了方便的反应箭头输入模式
 \ce{A -> B}   \ce{A <- B}  \ce{A <-> B} 
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce5.png" alt="ce5" style="zoom:50%;" />
+
 
 ```
 \ce{A <--> B}  \ce{A <=> B}  \ce{A <=>> B}  \ce{A <<=> B}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce6.png" alt="ce6" style="zoom:68%;" />
+
 
 箭头可以带有两个参数，即`>[][]`，第一个`[]`表示上方参数，第二个`[]`表示下方参数
 
@@ -1059,7 +1060,6 @@ mhchem提供了方便的反应箭头输入模式
 \ce{A ->[H2O] B}   \ce{A ->[{上方文字}][{下方文字}] B}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce7.png" alt="ce7" style="zoom:40%;" />
 
 ###### 2.11.2.6 气体和沉淀
 
@@ -1069,13 +1069,12 @@ mhchem提供了方便的反应箭头输入模式
 \ce{SO4^2- + Ba^2+ -> BaSO4 v}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce8.png" alt="ce8" style="zoom:45%;" />
 
 ```
 \ce{A v B (v) -> B ^ B (^)}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce9.png" alt="ce9" style="zoom:38%;" />
+
 
 ###### 2.11.2.7 一些复杂的例子
 
@@ -1083,25 +1082,24 @@ mhchem提供了方便的反应箭头输入模式
 \ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce10.png" alt="ce10" style="zoom:75%;" />
+
 
 ```
 \ce{$K = \frac{[\ce{Hg^2+}][\ce{Hg}]}{[\ce{Hg2^2+}]}$}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce11.png" alt="ce11" style="zoom:30%;" />
+
 
 ```
 \ce{$K = \ce{\frac{[Hg^2+][Hg]}{[Hg2^2+]}}$}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce12.png" alt="ce12" style="zoom:30%;" />
 
 ```
 \ce{Hg^2+ ->[I-]  $\underset{\mathrm{red}}{\ce{HgI2}}$  ->[I-]  $\underset{\mathrm{red}}{\ce{[Hg^{II}I4]^2-}}$}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/ce13.png" alt="ce13" style="zoom:45%;" />
+
 
 
 
@@ -1113,13 +1111,12 @@ cancel扩展包为显示分数中**约分线**的TeX宏包，或显示其他划�
 \cfrac{x}{1 + \cfrac{\cancel{y}}{\cancel{y}}} = \cfrac{x}{2}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/cancel1.png" alt="cancel1" style="zoom:28%;" />
+
 
 ```
 \cancel{e^{i \pi} + 1 =0}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/cancel2.png" alt="cancel2" style="zoom:20%;" />
 
 
 
@@ -1179,7 +1176,7 @@ C @>d>> D
 \end{CD}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/cd1.png" alt="cd1" style="zoom:40%;" />
+
 
 ```
 \begin{CD}
@@ -1189,7 +1186,7 @@ C @<a<b< D
 \end{CD}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/cd2.png" alt="cd2" style="zoom:45%;" />
+
 
 
 
@@ -1201,7 +1198,7 @@ Unicode扩展包一款显示Unicode字符的TeX宏包，基本命令为`\unicode
 \unicode{8751} \unicode{x220f}
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/unicode1.png" alt="unicode1" style="zoom:25%;" />
+
 
 
 
@@ -1222,16 +1219,14 @@ Newcommand扩展包提供了\def, \newcommand，\renewcommand，\let，\newenvir
 \RR               %调用\RR命令
 ```
 
-<img src="https://oursite-resourse.oss-cn-qingdao.aliyuncs.com/formula-images/readme/new1.png" alt="new1" style="zoom:5%;" />
 
-### 3 关于 About
 
-如有任何问题可以点击页面下方的邮箱图标向我们反馈，感谢您的使用！
+### 3 源码地址
+[1. LateX公式编辑器-妈叔出品](https://github.com/QianJianTech/LaTeXLive)
 
 ### 4 参考文献 Reference
-[1. LaTeX公式编辑器](http://47.104.179.138/)
-[2. MathJax Documentation](https://docs.mathjax.org/en/latest/index.html)
-[3. Displaying a formula](https://en.wikipedia.org/wiki/Help:Displaying_a_formula)
-[4. mathjax/MathJax: Beautiful math in all browsers - GitHub](https://github.com/mathjax/MathJax)
-[5. mhchem for MathJax](https://mhchem.github.io/MathJax-mhchem/)
+[1. MathJax Documentation](https://docs.mathjax.org/en/latest/index.html)
+[2. Displaying a formula](https://en.wikipedia.org/wiki/Help:Displaying_a_formula)
+[3. mathjax/MathJax: Beautiful math in all browsers - GitHub](https://github.com/mathjax/MathJax)
+[4. mhchem for MathJax](https://mhchem.github.io/MathJax-mhchem/)
 
