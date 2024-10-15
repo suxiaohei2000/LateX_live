@@ -1,15 +1,10 @@
 module.exports = {
   mode:"development",
   entry: {
-    latex: "./js/latex/main.js",
-    // readme: "./js/readme/main.js",
-    // update: "./js/update/main.js",
-    // messageboard: "./js/messageboard/main.js",
-    // login: "./js/login/main.js",
-    // personal: "./js/personal/main.js",
+    latex: "./latex/main.js",
   },
   output: {
-    path: __dirname + "/publish",
+    path: __dirname + "/src/js",
     filename: "[name].bundle.min.js",
   },
   module: {

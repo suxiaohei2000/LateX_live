@@ -1,4 +1,12 @@
 {
+  "name": "zsw-latex-live",
+  "version": "1.0.0",
+  "description": "开源LaTeX在线编辑器修改本地部署版本",
+  "scripts": {
+    "dev": "npx http-server ./src ",
+    "webpack": "npx webpack -w "
+  },
+
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
